@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function divide(){
+            var x=parseFloat(prompt("enter the first number"));
+            var y=parseFloat(prompt("enter the second number"));
+            if(isNaN(x)||isNaN(y)){
+                alert("invalidinput.please enter valid number");
+                return;
+            }
+            try{
+                if(y===0){
+                throw new error("division by zero is not allowed.");
+                }
+                var result=x/y;
+                alert("the result of the division is:"+result);
+            }
+            catch(error){
+                var confirmretry=confirm("an error occured:"+error.message+"\n do you want to try again?");
+                if (confirmretry){
+                    divide();
+                }
+            }
+                finally {
+                    alert("division operator completed");
+                }
+            }
+        
+        divide();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

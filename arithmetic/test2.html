@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 2</title>
+    <script>
+        function func1(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var num3 = document.getElementById("num3").value;
+
+            if ((num1>num2)&&(num1>num3)){
+                document.write("num1  is greater");
+            }
+            else if(num2>num3){
+                document.write("num2 is greater");
+            }else{
+                document.write("num3 is greater");
+        }
+        }
+    </script>
+</head>
+<body>
+    <label>enter a number 1</label>
+    <input type="text" id="num1">
+    <label>enter a number 2</label>
+    <input type="text" id="num2">
+    <label> enter a number 3</label>
+    <input type="text" id="num3">
+    <button onclick="func1()">check</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript function</title>
+    <script>
+        function func1(){
+            var num1=document.getElementById("num1").value;
+            if(num1%2==0 ){
+            document.write("the number is even");
+            }
+            else{
+                document.write("the number is odd");
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <label>Enter num1</label>
+        <input type="text" id="num1"><br>
+        <button onclick="func1()">check</button>
+    </body>
+    </html>

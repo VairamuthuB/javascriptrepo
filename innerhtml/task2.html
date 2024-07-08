@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of circle</title>
+    <script>
+        function func1(){
+            var one=document.getElementById("radius").value;
+            console.log(3.14*radius*radius);
+            var output=(3.14*one);
+            document.getElementById("output").innerHTML=output;
+
+        }
+    </script>
+</head>
+<body>
+    <div class="one">
+        <label>value</label>
+        <input type="text" id="radius"><br>
+        <div id="output"><br></div>
+        <button onclick="func1()">click</button>
+    </div>
+</body>
+</html>

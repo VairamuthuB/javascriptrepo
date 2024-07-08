@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var uname=document.getElementById("uname").value;
+            var pass=document.getElementById("pass").value;
+            
+            if(uname===""){
+                alert("enter a user name");
+            }
+            if (pass==="") {
+                alert("ener a password");
+            } else {
+                alert("registered succesfully");
+                windows.location.href="dashboard.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>enter a name</label>
+    <input type="text" id="uname">
+    <label>enter a password</label>
+    <input type="text" id="pass">
+    <button onclick="validate()">check</button>
+</body>
+</html>
